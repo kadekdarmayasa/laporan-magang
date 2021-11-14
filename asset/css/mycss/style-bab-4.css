@@ -1,15 +1,15 @@
 :root {
     --grey-color: #697789;
     --white-with-opacity: rgba(255, 255, 255, 0.4);
-    --background-linear-gradient: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    --background-linear-gradient: linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0));
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--grey-color);
-    position: relative;
     height: 100%;
     width: 100%;
+    position: relative;
     padding-bottom: 30px;
     background-image: url("../../images/background\ cover 4.jpg");
     background-size: cover;
@@ -51,26 +51,12 @@ body > * {
 #judul-bab-4 h1 {
     color: white;
     font-weight: 600;
-    margin: 20px auto 30px;
-    font-size: calc(1vmax + 1rem);
+    margin: 20px auto 20px;
+    font-size: calc(1vmax + 0.8rem);
     position: relative;
     text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#judul-bab-4 h1::after {
-    content: "";
-    display: block;
-    margin-top: 1.4em;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    width: 3em;
-    height: 0.22em;
-    border-radius: 12px;
-    top: 0;
-    background-color: white;
-    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
-}
 /* akhir judul bab */
 
 /* isi bab */
@@ -152,5 +138,15 @@ p.inside-list {
 
     .next-prev-btn {
          margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        height: 100%;
+    }
+
+    #judul-bab-4 h1 {
+        margin: 20px auto 20px;
     }
 }

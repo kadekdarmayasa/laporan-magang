@@ -224,8 +224,8 @@ body {
 /* back to top */
 #back-to-top {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 15px;
+  bottom: 15px;
   z-index: 9999;
   background-color: #29f0b8;
   color: white;
@@ -350,3 +350,24 @@ body {
     width: auto;
   }
 }
+
+@media all and (display-mode: fullscreen) {
+  .cover {
+    padding-top: 210px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+   .bab-1 span, .bab-2 span, .bab-3 span, .bab-4 span {
+    display: none;
+   }
+
+    .bab #button {
+      height: 40px;
+    }
+
+    .bab #button:hover {
+      height: 40px;
+    }
+}
+

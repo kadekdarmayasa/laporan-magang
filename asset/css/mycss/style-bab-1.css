@@ -6,7 +6,7 @@
     overflow: hidden;
     --grey-color: #697789;
     --white-with-opacity: rgba(255, 255, 255, 0.4);
-    --background-linear-gradient: linear-gradient(to top, rgba(0,0,0,.5), rgba(0,0,0,0));
+    --background-linear-gradient: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,0));
 }
 
 img {
@@ -16,7 +16,6 @@ img {
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--grey-color);
-    position: relative;
     height: 100%;
     width: 100%;
     background-image: url("../../images/background\ cover 4.jpg");
@@ -58,7 +57,7 @@ body > * {
     color: white;
     font-weight: 600;
     margin: 10px auto 10px;
-    font-size: calc(1vmax + 1rem);
+    font-size: calc(1vmax + 0.8rem);
     position: relative;
     text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -165,4 +164,15 @@ p.inside-list {
   #isi-bab .bagian-bab-1 {
     height: 700px;
   }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        height: 100%;
+    }
+
+    #judul-bab-1 h1 {
+        margin: 20px auto 20px;
+    }
+
 }
