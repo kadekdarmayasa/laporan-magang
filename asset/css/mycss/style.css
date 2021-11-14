@@ -158,6 +158,10 @@ body {
   backdrop-filter: blur(6px);
 }
 
+.bab-1 p.sistematika span {
+    display: none;
+}
+
 .bab-1  {
   height: 390px;
 }
@@ -209,15 +213,11 @@ body {
 
 #button span {
   transition: 0.3s;
+  position: relative;
 }
 
 .bab #button:hover {
   background-color: #5af0c5 ;
-}
-
-.bab #button:hover > span {
-  margin-left: 5px;
-  position: relative;
 }
 /* akhir bab */
 
@@ -237,6 +237,11 @@ body {
 }
 /* back to top */
 
+@media screen and (min-width: 1362px) {
+   .bab-1 p.sistematika span {
+    display: inline-block;
+  }
+}
 
 @media screen and (min-width: 1320px) {
  .identitas-siswa {
@@ -303,7 +308,7 @@ body {
 
   .bab-1, .bab-2, .bab-3, .bab-4 {
     width: 80%;
-    height: 130px;
+    height: 100%;
     margin: auto;
   }
 
@@ -316,6 +321,21 @@ body {
     padding: 8px 20px; 
   }
 }
+
+@media screen and (max-width: 980px) {
+  .bab-1 p.sistematika span {
+    display: inline-block;
+  }
+}
+
+
+@media screen and (min-width: 576px) {
+  .bab #button:hover > span {
+    margin-left: 5px;
+    position: relative;
+  }
+}
+
 
 @media screen and (max-width: 576px) {
    .daftar-bab h2 {
