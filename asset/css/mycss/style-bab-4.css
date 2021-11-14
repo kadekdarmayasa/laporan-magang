@@ -1,0 +1,156 @@
+:root {
+    --grey-color: #697789;
+    --white-with-opacity: rgba(255, 255, 255, 0.4);
+    --background-linear-gradient: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--grey-color);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    background-image: url("../../images/background\ cover 4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    background-color: var(--white-with-opacity);
+    backdrop-filter: blur(4px);
+}
+
+body::before {  
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background: var(--background-linear-gradient);
+}
+
+body > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* judul bab */
+#judul-bab-4 h1 {
+    color: white;
+    font-weight: 600;
+    margin: 20px auto 30px;
+    font-size: calc(1vmax + 1rem);
+    position: relative;
+    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#judul-bab-4 h1::after {
+    content: "";
+    display: block;
+    margin-top: 1.4em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 3em;
+    height: 0.22em;
+    border-radius: 12px;
+    top: 0;
+    background-color: white;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+/* akhir judul bab */
+
+/* isi bab */
+#isi-bab {
+    position: relative;
+    z-index: 2;
+}
+
+#isi-bab .bagian-bab-4 {
+    display: block;
+    background-color: white;
+    height: 100%;
+    overflow-y: auto;
+    padding: 50px calc(1vmin + 3em);
+}
+
+.bagian-bab-4 p, .bagian-bab-4 li {
+    line-height: 1.8;
+}
+
+.bagian-bab-4 p {
+    font-size: calc(1vmin + 0.5rem);
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.bagian-bab-4 li {
+     font-size: calc(1vmin + 0.5rem);
+      text-align: justify;
+      margin-top: 5px;
+}
+
+.bagian-bab-4 h5 {
+    font-size: calc(1vmin + 0.8rem);
+}
+
+p.inside-list {
+    text-indent: 0px;
+    text-align: justify;
+    margin-left: -30px;
+    padding-left: 30px;
+}
+
+.next-prev-btn a {
+    color: white;
+}
+
+.next-prev-btn {
+    display: flex;
+    margin-top: 60px;
+    justify-content: end;
+}
+
+.next-prev-btn a:nth-child(1) {
+    background-color: rgb(255, 72, 72);
+    margin-right: 20px;
+}
+
+.next-prev-btn a:nth-child(1):hover {
+    background-color: rgb(252, 111, 111);
+    color: white;
+}
+
+.next-prev-btn a:nth-child(2) {
+    background-color: #2de2af;
+}
+
+.next-prev-btn a:nth-child(2):hover {
+    background-color: #38f1bd;
+    color: white;
+}
+/* akhir isi bab */
+
+
+@media screen and (min-width: 992px) {
+    #isi-bab .bagian-bab-4 {
+        padding: 50px calc(1vmin + 7em);
+    }
+
+    .next-prev-btn {
+         margin-top: 120px;
+    }
+}

@@ -1,0 +1,332 @@
+:root {
+    --purple-color: #3A3379;
+    --second-purple-color: #1b0044;
+    --third-purple-color: rgb(87, 39, 163);
+    --dark-blue-color: #071e3b;
+    --blue-color: rgb(31, 66, 135);
+    --light-purple-color: rgb(41, 38, 68);
+    --grey-color: #697789;
+    --light-blue-color: #F3F6FD;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--grey-color);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* cover */
+.cover {
+    height: 100vh;
+    padding-top: 160px;
+    background-size: cover;
+    background-image: url(../../images/background\ cover\ 4.jpg);
+    background-size: cover;
+    position: relative;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+
+.cover::after {
+  content: "";
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0));
+}
+
+.identitas-siswa {
+    padding: 12px;
+    width: 80%;
+    margin-left: auto;
+    z-index: 2;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+}
+
+.identitas-siswa h4 {
+  color: rgb(48, 48, 48);
+  font-size: calc(1vmax + 0.6rem);
+  font-weight: 600;
+}
+
+.identitas-siswa p {
+  color: rgb(73, 73, 73);
+  font-size: calc(0.8vmax + 0.4rem);
+}
+
+.profile-siswa {
+    width: 340px;
+    height: 340px;
+    z-index: 2;
+    position: relative;
+    margin-top: -40px;
+    margin-left: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+.profile-siswa img {
+    width: 100%;
+    height: 100%;
+}
+/* akhir cover */
+
+
+/* moto */
+.moto {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.moto h2 {
+  color: rgb(48, 48, 48);
+  text-shadow: -1px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: calc(2vmax + 1rem);
+}
+
+.moto h4 {
+  color: rgb(90, 90, 90);
+  font-size: calc(2vmax + 0.4rem);
+  font-style: italic;
+  font-weight: 300;
+}
+/* akhir moto */
+
+/* bab */
+.daftar-bab {
+  background: url(../../images/background\ cover\ 4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.daftar-bab::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+}
+
+.daftar-bab h2 {
+  margin: 80px auto 20px;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  letter-spacing: 1.2px;
+  font-size: calc(1vmax + 1rem);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.parent-bab {
+  width: 96%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.bab-1, .bab-2, .bab-3, .bab-4 {
+  width: 100%;
+  border-radius: 12px;
+  height: 400px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.bab-1  {
+  height: 390px;
+}
+
+.bab-3 {
+  height: 350px;
+}
+
+.bab-4 {
+  height: 270px;
+}
+
+.bab-2 {
+  height: 440px;
+}
+
+.bab {
+  margin-top: 20px;
+}
+
+.bab h4 {
+  font-size: calc(1vmax + 0.6rem);
+  color: rgb(49, 49, 49);
+}
+
+.bab h3 {
+  margin-bottom: 20px;
+  font-size: calc(1vmax + 0.3rem);
+}
+
+.isi-bab {
+  background-color: white;
+  height: 40px;
+  padding-left: 20px;
+  line-height: 40px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: calc(1vh + 0.4rem);
+}
+
+.bab #button {
+  margin-left: 50%;
+  transform: translate(-50%);
+  background-color: #29f0b8;
+  color: white;
+  width: 140px;
+  font-size: calc(0.8vmax + 0.5rem);
+}
+
+#button span {
+  transition: 0.3s;
+}
+
+.bab #button:hover {
+  background-color: #5af0c5 ;
+}
+
+.bab #button:hover > span {
+  margin-left: 5px;
+  position: relative;
+}
+/* akhir bab */
+
+/* back to top */
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  background-color: #29f0b8;
+  color: white;
+  display: none;
+}
+
+#back-to-top:hover {
+  background-color: #5af0c5;
+}
+/* back to top */
+
+
+@media screen and (min-width: 1320px) {
+ .identitas-siswa {
+    width: 60%;
+ }
+
+ .daftar-bab {
+    background-position-y: -100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .profile-siswa {
+    margin: auto;
+    width: 280px;
+    height: 280px;
+  }
+
+  .daftar-bab {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  .isi-bab {
+    display: block;
+    margin-top: 20px;
+  }
+
+    
+  .bab-1  {
+    height: 380px;
+  }
+
+  .bab-3 {
+    height: 320px;
+  }
+
+  .bab-4 {
+    height: 260px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .profile-siswa {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .cover {
+    padding-top: 40px;
+    height: 100%;
+  }
+
+  .identitas-siswa {
+   width: 80%;
+   margin: 50px auto;
+  }
+
+  .bab h4 {
+    font-size: calc(1.5vmax + 0.5rem);
+  }
+
+  .bab-1, .bab-2, .bab-3, .bab-4 {
+    width: 80%;
+    height: 130px;
+    margin: auto;
+  }
+
+   .isi-bab {
+    display: none;
+  }
+
+  .bab #button {
+    font-size: calc(1vmax + 0.3rem);
+    padding: 8px 20px; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+   .daftar-bab h2 {
+     width: 200px;
+  }
+  
+  .identitas-siswa h4 {
+    text-align: center;
+  }
+
+  .bab #button {
+    width: auto;
+  }
+}
