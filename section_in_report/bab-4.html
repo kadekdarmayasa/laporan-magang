@@ -8,6 +8,8 @@
     <title>BAB IV</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- MY CSS -->
     <link rel="stylesheet" href="../asset/css/mycss/style-bab-4.css">
 </head>
@@ -18,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">BAB IV <br>Penutup</h1>
+                    <h1 class="text-center" data-aos="fade-down" data-aos-duration="2000">BAB IV <br>Penutup</h1>
                 </div>
             </div>
         </div>
@@ -30,7 +32,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <di class="col-md-10">
-                    <div class="bagian-bab-4">
+                    <div class="bagian-bab-4" data-aos="zoom-out-up" data-aos-duration="2000" data-aos-delay="200">
                         <div class="kesimpulan display-3">
                             <!-- Kesimpulan -->
                             <h5 class="display-1">Kesimpulan</h5>
@@ -81,6 +83,14 @@
         </div>
     </section>
     <!-- akhir isi bab -->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
 
     <!-- Boostrap JS -->
     <script src="../asset/js/bootstrap.min.js"></script>

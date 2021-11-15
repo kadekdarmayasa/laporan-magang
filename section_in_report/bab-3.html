@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- MY CSS -->
     <link rel="stylesheet" href="../asset/css/mycss/style-bab-3.css">
 </head>
@@ -19,7 +22,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">BAB III <br>Pelaksanaan Praktek Kerja Industri</h1>
+                    <h1 class="text-center" data-aos="fade-down" data-aos-duration="2000">BAB III <br>Pelaksanaan
+                        Praktek Kerja Industri</h1>
                 </div>
             </div>
         </div>
@@ -42,13 +46,17 @@
                                 aria-label="Slide 3" class="bg-white"></button>
                             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
                                 aria-label="Slide 4" class="bg-white"></button>
+                            <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4"
+                                aria-label="Slide 5" class="bg-white"></button>
                         </div>
-                        <div class="carousel-inner bagian-bab-3">
+                        <div class="carousel-inner bagian-bab-3" data-aos="zoom-out-up" data-aos-duration="2000"
+                            data-aos-delay="200">
                             <div class="carousel-item active">
                                 <div class="rencana-kegiatan">
                                     <!-- Rencana Kegiatan -->
                                     <h5 class="display-1 mb-4">Rencana Kegiatan</h5>
-                                    <p class="display-3">Praktek Kerja Industri dilaksanakan di kantor PT. Bamboomedia
+                                    <p class="display-3 inside-list">Praktek Kerja Industri dilaksanakan di kantor PT.
+                                        Bamboomedia
                                         Cipta Persada
                                         dengan rencana kegiatan saat Praktek Kerja Industri, antara lain :</p>
                                     <ol type="1" class="display-3">
@@ -129,7 +137,8 @@
                                 <div class="deskripsi-tugas">
                                     <!-- Deskripsi Tugas Yang Dilaksanakan -->
                                     <h5 class="display-1">Deskripsi Tugas Yang Dilaksanakan</h5>
-                                    <p class="display-3">Berikut ini deskripsi tugas dari beberapa uraian tugas yang
+                                    <p class="display-3 inside-list">Berikut ini deskripsi tugas dari beberapa uraian
+                                        tugas yang
                                         dikerjakan di PT. Bamboomedia Cipta Persada :</p>
                                     <ol type="1" class="display-3 mt-2">
                                         <!-- Data Kominfo -->
@@ -137,7 +146,8 @@
                                         <p class="inside-list">langkah-langkah pengisian data kominfo :</p>
                                         <ol type="a">
                                             <li>Buka Tautan Berikut ini <a class="link"
-                                                    href="https://docs.google.com/spreadsheets/d/1IVubJnJlhNPZLd7Sonmr6rKv2vv34naujxyJwVDR4iQ/edit#gid=214832731">Google
+                                                    href="https://docs.google.com/spreadsheets/d/1IVubJnJlhNPZLd7Sonmr6rKv2vv34naujxyJwVDR4iQ/edit#gid=214832731"
+                                                    target="_blank">Google
                                                     Spreadsheets</a></li>
                                             <li>Setelah terbuka maka akan di arahkan pada google Spreadsheet. Jika belum
                                                 melakukan login, silahkan login terlebih dahulu menggunakan akun google
@@ -203,7 +213,8 @@
                                     <!-- Step Installasi -->
                                     <ol type="a" class="display-3">
                                         <li>Buka situs resmi dari flutter pada link berikut ini <a class="link"
-                                                href="https://flutter.dev/docs/get-started/install">Situs Resmi
+                                                href="https://flutter.dev/docs/get-started/install"
+                                                target="_blank">Situs Resmi
                                                 Flutter</a></li>
                                         <li>Jika sudah maka tampilannya akan seperti di bawah ini.</li>
                                         <!-- website resmi flutter -->
@@ -241,7 +252,8 @@
                                     <p class="inside-list mt-4">STEP 2 : Download Android Studio</p>
                                     <ol type="a" class="display-3">
                                         <li>Unduh dan Install Android Studio pada situs
-                                            <a href="https://developer.android.com/studio" class="link">Situs Resmi
+                                            <a href="https://developer.android.com/studio" class="link"
+                                                target="_blank">Situs Resmi
                                                 Android
                                                 Studio</a>
                                         </li>
@@ -278,15 +290,16 @@
                                     </ol>
                                     <!-- Setuju dengan lisensi android -->
                                     <p class="inside-list mt-4">STEP 4 : Setuju Dengan Lisensi Android</p>
+                                    <p class="inside-list">Sebelum dapat menggunakan Flutter, Kita harus menyetujui
+                                        lisensi platform Android SDK. </p>
                                     <ol type="a" class="display-3">
-                                        <p>Sebelum dapat menggunakan Flutter, Kita harus menyetujui
-                                            lisensi platform Android SDK. </p>
                                         <li>Pastikan sudah memiliki versi Java 8 yang terinstall dan JAVA_HOME pada
                                             <i>environment variables</i> disetel ke folder JDK.
                                         </li>
                                         <li>Jika belum memiliki Java yang terinstall pada laptop, silahkan kunjungi
                                             situs berikut untuk installasinya <a class="link"
-                                                href="https://www.oracle.com/java/technologies/downloads/#jdk17-windows">Java
+                                                href="https://www.oracle.com/java/technologies/downloads/#jdk17-windows"
+                                                target="_blank">Java
                                                 JDK</a>.</li>
                                         <li>Silahkan pilih file yang bernama <q>x64 Installer</q>, lalu <i>download</i>.
                                             Setelah di <i>download</i> ekstrak file tersebut dan letakkan pada direktori
@@ -321,10 +334,240 @@
                                             menjalankan file flutter dan dart.</p>
                                     </ol>
                                 </ol>
-                                <div class="next-prev-btn">
-                                    <a href="bab-2.html" type="button" class="btn">BAB II</a>
-                                    <a href="bab-4.html" type="button" class="btn">BAB IV</a>
-                                </div>
+                            </div>
+                            <!-- Aplikasi UI Online Course -->
+                            <div class="carousel-item display-3">
+                                <ol start="3" type="1">
+                                    <li>Aplikasi UI Online Course</li>
+                                    <!-- STEP 1 -->
+                                    <p class="inside-list">STEP 1 : Membuat File Project dan Menambahkan Asset</p>
+                                    <ol type="a" class="display-3 min-margins">
+                                        <li>Pergi ke <i>Command Prompt</i>, lalu ketik perintah
+                                            berikut ini : </li>
+                                        <!-- perintah pembuatan project flutter -->
+                                        <img src="../asset/images/perintah-pembuatan-project-flutter.png"
+                                            alt="perintah-pembuatan-project-flutter"
+                                            class="img-fluid img-thumbnail my-2">
+                                        <li>Setelah terbuka, buat folder yang bernama images dan fonts. Dan tambahkan
+                                            file - file berikut ini :</li>
+                                        <p class="inside-list"><i>Images Source</i> : <a
+                                                href="https://www.dropbox.com/sh/ste3bbz2lmjpngw/AAC_m2ESF-IYUmAKiIZeKjr4a?dl=0"
+                                                class="link" target="_blank">My
+                                                Dropbox</a></p>
+                                        <p class="inside-list min-margins"><i>Fonts Sources</i> : <a
+                                                href="https://www.dropbox.com/sh/w41yybcyv9ktlo8/AAD3QXAhxOGaUi5tZxp2Ny5ua?dl=0"
+                                                class="link" target="_blank">
+                                                My Dropbox</a></p>
+                                        <li>Pergi ke pubspec.yaml dan cari opsi berikut : </li>
+                                        <img src="../asset/images/fonts before.png" alt="fonts-before"
+                                            class="img-fluid img-thumbnail">
+                                        <img src="../asset/images/images before.png" alt="images-before"
+                                            class="img-fluid img-thumbnail">
+                                        <p class="inside-list">Lalu ganti dengan opsi berikut :</p>
+                                        <img src="../asset/images/fonts after .png" alt="fonts-after"
+                                            class="img-fluid img-thumbnail min-margins">
+                                        <img src="../asset/images/images after.png" alt="img-after"
+                                            class="img-fluid img-thumbnail mb-3">
+                                    </ol>
+                                    <!-- STEP 2 -->
+                                    <p class="inside-list">STEP 2 : Setting Versi Flutter SDK dan
+                                        Menambahkan
+                                        Package</p>
+                                    <ol type="a" class="min-margins">
+                                        <li class="version"></li>
+                                        <li>Menambahkan package get dan splashscreen. Masih dalam pubspec.yaml, cari
+                                            opsi yang bernama <i>dependencies</i>, dibawah opsi tersebut tambahkan
+                                            perintah get: ^3.4.2, dan splashscreen: ^1.2.0.</li>
+                                    </ol>
+                                    <!-- STEP 3 -->
+                                    <p class="inside-list">STEP 3 : Membuat Aplikasi UI Online Course</p>
+                                    <ol type="a" class="min-margins">
+                                        <li>Pergi ke folder lib pada project flutter tadi, dan tambahkan folder – folder
+                                            berikut :</li>
+                                        <ol type="1" class="min-margins">
+                                            <li>data_source</li>
+                                            <li>ui</li>
+                                            <p class="inside-list">di dalam folder ui tambahkan folder page, screen,
+                                                section_in_detail_page, section_in_home_page, dan styling.</p>
+                                        </ol>
+                                        <li>Di dalam folder data_source tambahkan file course_category.dart dan
+                                            course_popular.dart.</li>
+                                        <!-- course category -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file course_category.dart
+                                            </figcaption>
+                                            <img src="../asset/images/course_category.png" alt="course_category.dart"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- course popular -->
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file course_popular.dart
+                                            </figcaption>
+                                            <img src="../asset/images/course_popular.png" alt="course_popular.dart"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <li>Di dalam folder styling tambahkan file button_showall.dart,
+                                            color_style.dart, dan text_style.dart.</li>
+                                        <!-- button showall -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file button_showall.dart
+                                            </figcaption>
+                                            <img src="../asset/images/button_showall.png" alt="button_showall"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- color style -->
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file color_style.dart
+                                            </figcaption>
+                                            <img src="../asset/images/color_style.png" alt="color-style"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- text_style -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file text_style.dart
+                                            </figcaption>
+                                            <img src="../asset/images/text_style.png" alt="text-style"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <li>Pada folder section_in_home_page tambahkan file – file berikut ini :</li>
+                                        <!-- Articles -->
+                                        <figure class="figure mt-2">
+                                            <figcaption class=" figure-caption fs-6 text-center">
+                                                file articles.dart
+                                            </figcaption>
+                                            <img src="../asset/images/articles .png" alt="articles"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- course section -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file course_section.dart
+                                            </figcaption>
+                                            <img src="../asset/images/course_section.png" alt="course-section"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- popular course -->
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file popular_course.dart
+                                            </figcaption>
+                                            <img src="../asset/images/popular_course.png" alt="popular-course"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- header home -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file header_home.dart
+                                            </figcaption>
+                                            <img src="../asset/images/header_home.png" alt="header home"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <li>Tambahkan file - file berikut pada folder section_in_detail_page :</li>
+                                        <!-- header-detail -->
+                                        <figure class="figure mt-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file header_detail.dart
+                                            </figcaption>
+                                            <img src="../asset/images/header_detail.png" alt="header-detail"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- lesson dart -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file lesson.dart
+                                            </figcaption>
+                                            <img src="../asset/images/lesson.png" alt="lesson"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- mentor profile -->
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file mentor_profile.dart
+                                            </figcaption>
+                                            <img src="../asset/images/mentor_profile.png" alt="mentor-profile"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- menu bar -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file menu_bar.dart
+                                            </figcaption>
+                                            <img src="../asset/images/menu_bar.png" alt="menu-bar"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- play trailer -->
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file play_trailer.dart
+                                            </figcaption>
+                                            <img src="../asset/images/play_trailer.png" alt="play_trailer"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <li>Di dalam folder page tambahkan file - file berikut ini :</li>
+                                        <!-- home page -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file home_page.dart
+                                            </figcaption>
+                                            <img src="../asset/images/home_page.png" alt="home_page"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <!-- course detail page -->
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file course_detail_page.dart
+                                            </figcaption>
+                                            <img src="../asset/images/course_detail.png" alt="course_detail"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <li>Tambahkan file berikut ini pada folder screen :</li>
+                                        <!-- splash screen -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file splash_screen.dart
+                                            </figcaption>
+                                            <img src="../asset/images/splashscreen.png" alt="splashscreen"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <li>Tahap yang terakhir adalah hapus semua isi file main.dart pada folder lib.
+                                            Dan ganti dengan sintaks berikut ini:</li>
+                                        <!-- main dart -->
+                                        <figure class="figure mt-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                file main.dart
+                                            </figcaption>
+                                            <img src="../asset/images/main_dart.png" alt="splashscreen"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                        <li>Jika sudah selesai, silahkan hubungkan laptop dengan perangkat Android
+                                            menggunakan kabel USB. Setelah terhubung, di dalam project flutter tadi,
+                                            pergi ke menu <i>run and debugging</i> dengan perintah <b>CTRL + Shift +
+                                                D</b>. Jika menu
+                                            sudah terbuka, selajutnya klik button yang berisi text dengan <i>value run
+                                                and debug</i>. Tunggu
+                                            sampai prosesnya selesai. Jika sudah selesai maka outputnya akan seperti
+                                            gambar di bawah ini.</li>
+                                        <!-- Output Aplikasi UI Online Course -->
+                                        <figure class="figure my-2">
+                                            <figcaption class="figure-caption fs-6 text-center">
+                                                Output Aplikasi UI Online Course
+                                            </figcaption>
+                                            <img src="../asset/images/output_ui_online_course_1.png" alt="output-1"
+                                                class="figure-img img-fluid img-thumbnail">
+                                            <img src="../asset/images/output_ui_online_course_2.png" alt="output-2"
+                                                class="figure-img img-fluid img-thumbnail">
+                                        </figure>
+                                    </ol>
+                                    <div class="next-prev-btn">
+                                        <a href="bab-2.html" type="button" class="btn">BAB II</a>
+                                        <a href="bab-4.html" type="button" class="btn">BAB IV</a>
+                                    </div>
+                                </ol>
                             </div>
                         </div>
                     </div>
@@ -336,6 +579,20 @@
     <!-- Boostrap JS -->
     <script src="../asset/js/bootstrap.min.js"></script>
     <script src="../asset/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
+    <!-- My Script -->
+    <script>
+        const versionSDK = document.querySelector('.version');
+        versionSDK.innerHTML = "Dalam pubspec.yaml cari opsi dengan nama sdk, dan ubah nilainya menjadi \“>=2.10.0 <3.0.0\”.";
+    </script>
 </body>
 
 </html>

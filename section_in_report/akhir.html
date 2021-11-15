@@ -14,6 +14,17 @@
 
 <body>
     <h1>Om, Santhi, Santhi, Santhi, om</h1>
+
+    <!-- GSAP JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script>
+        gsap.from('h1', {
+            duration: 2,
+            y: -1000,
+            ease: 'bounce.out',
+            opacity: 0,
+        });
+    </script>
 </body>
 
 </html>

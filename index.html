@@ -10,6 +10,9 @@
     <!-- Boostrap CSS -->
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="asset/css/mycss/style.css">
 </head>
@@ -43,8 +46,9 @@
         <div class="row justify-content-center">
             <div class="col moto">
                 <div class="moto-container text-center">
-                    <h2>MOTO</h2>
-                    <h4><q>Carilah Ilmu, Pelajari, & Bagikan</q></h2>
+                    <h2 data-aos="fade-down" data-aos-duration="2000">MOTO</h2>
+                    <h4 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500"><q>Carilah Ilmu, Pelajari, &
+                            Bagikan</q></h2>
                 </div>
             </div>
         </div>
@@ -54,11 +58,11 @@
     <!-- Daftar Bab -->
     <div class="container-fluid daftar-bab" id="daftar-bab">
         <div class="row text-center">
-            <h2>DAFTAR BAB</h2>
+            <h2 data-aos="fade-down" data-aos-duration="2000">DAFTAR BAB</h2>
         </div>
         <div class="row justify-content-center parent-bab">
             <div class=" col-md-8 col-lg-3 bab">
-                <div class="bab-1">
+                <div class="bab-1" data-aos="flip-left" data-aos-duration="2000">
                     <h4 class="text-center">BAB I</h4>
                     <h3 class="text-center">Pendahuluan</h3>
                     <p class="isi-bab">1. Latar Belakang</p>
@@ -70,7 +74,7 @@
                 </div>
             </div>
             <div class="col-md-8 col-lg-3 bab">
-                <div class="bab-2">
+                <div class="bab-2" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="100">
                     <h4 class="text-center">BAB II</h4>
                     <h3 class="text-center">Tinjauan Umum Perusahaan</h3>
                     <p class="isi-bab">1. Sejarah Perusahaan</p>
@@ -83,7 +87,7 @@
                 </div>
             </div>
             <div class="col-md-8 col-lg-3 bab">
-                <div class="bab-3">
+                <div class="bab-3" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="200">
                     <h4 class="text-center">BAB III</h4>
                     <h3 class="text-center">Pelaksanaan Praktek Kerja Industri</h3>
                     <p class="isi-bab">1. Rencana Kegiatan</p>
@@ -94,7 +98,7 @@
                 </div>
             </div>
             <div class="col-md-8 col-lg-3 bab">
-                <div class="bab-4">
+                <div class="bab-4" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="300">
                     <h4 class="text-center">BAB IV</h4>
                     <h3 class="text-center">Penutup</h3>
                     <p class="isi-bab">1. Kesimpulan</p>
@@ -109,13 +113,21 @@
 
     <!-- back to top -->
     <button class="btn" type="button" id="back-to-top" onclick="toTop()"><span>&#8593</span></button>
-    <!-- back to top -->
+
     <!-- Boootsrap JS -->
     <script src="asset/js/bootstrap.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
     <!-- My Script -->
-    <script src="asset/js/myscript/script.js"></script>
+    <script src="asset/js/myscript/script.js" defer></script>
 </body>
 
 </html>

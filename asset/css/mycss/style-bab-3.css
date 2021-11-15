@@ -11,6 +11,8 @@
 
 img {
     line-height: 0;
+    height: auto;
+    max-width: 100%;
 }
 
 body {
@@ -51,6 +53,10 @@ body::before {
 body > * {
     position: relative;
     z-index: 2;
+}
+
+.min-margins {
+    margin-top: -12px;
 }
 
 #judul-bab-3 h1 {
@@ -188,6 +194,14 @@ p.inside-list {
 @media screen and (min-width: 992px) {
     #isi-bab .bagian-bab-3 {
         padding: 50px calc(1vmin + 7em);
+    }
+
+    .next-prev-btn a.btn {
+        height: 50px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

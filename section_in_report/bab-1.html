@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="../asset/css/mycss/style-bab-1.css">
 </head>
@@ -19,7 +22,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">BAB I <br>Pendahuluan</h1>
+                    <h1 class="text-center" data-aos="fade-down" data-aos-duration="2000">BAB I <br>Pendahuluan</h1>
                 </div>
             </div>
         </div>
@@ -43,7 +46,8 @@
                             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
                                 aria-label="Slide 4" class="bg-white"></button>
                         </div>
-                        <div class="carousel-inner bagian-bab-1">
+                        <div class="carousel-inner bagian-bab-1" data-aos="zoom-out-up" data-aos-duration="2000"
+                            data-aos-delay="200">
                             <div class="carousel-item active">
                                 <div class="latar-belakang display-3">
                                     <!-- Latar Belakang -->
@@ -63,7 +67,7 @@
                                         dalam
                                         bidang informasi dan komunikasi </p>
                                     <p>Namun demikian pesatnya perkembangannya, maka saat ini diperlukan
-                                        tenaga
+                                        tenaga -
                                         tenaga
                                         ahli yang tedidik, terampil dan profesional di bidang teknologi,
                                         maka
@@ -138,7 +142,6 @@
                                         <!-- Latar Belakang Khusus -->
                                         <li>Khusus</li>
                                         <ol type="a">
-                                            <li>Khusus</li>
                                             <li>Siswa mempunyai gambaran nyata tentang dunia kerja,
                                                 mulai
                                                 dari
@@ -285,6 +288,14 @@
             </div>
     </section>
     <!-- akhir isi bab -->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
 
     <!-- Boostrap JS -->
     <script src="../asset/js/bootstrap.min.js"></script>

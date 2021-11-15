@@ -154,6 +154,18 @@ p.inside-list {
     #isi-bab .bagian-bab-1 {
         padding: 50px calc(1vmin + 7em);
     }
+
+    .next-prev-btn a.btn {
+        height: 50px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next-prev-btn a.btn:nth-child(1) {
+        width: 120px;
+    }
 }
 
 @media all and (display-mode: fullscreen) {

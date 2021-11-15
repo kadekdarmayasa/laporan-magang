@@ -159,9 +159,17 @@ p.inside-list {
     }
 
     
-.produk .image {
-    margin-left: 50px;
-}
+    .produk .image {
+        margin-left: 50px;
+    }
+
+    .next-prev-btn a.btn {
+        height: 50px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media all and (display-mode: fullscreen) {

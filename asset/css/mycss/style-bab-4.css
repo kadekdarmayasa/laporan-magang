@@ -139,6 +139,18 @@ p.inside-list {
     .next-prev-btn {
          margin-top: 120px;
     }
+
+    .next-prev-btn a.btn {
+        height: 50px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next-prev-btn a.btn:nth-child(2) {
+        width: 160px;
+    }
 }
 
 @media screen and (max-width: 480px) {

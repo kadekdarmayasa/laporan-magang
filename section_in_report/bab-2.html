@@ -8,6 +8,8 @@
     <title>BAB II</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- MY CSS -->
     <link rel="stylesheet" href="../asset/css/mycss/style-bab-2.css">
 </head>
@@ -18,7 +20,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">BAB II <br>Tinjauan Umum Perusahaan</h1>
+                    <h1 class="text-center" data-aos="fade-down" data-aos-duration="2000">BAB II <br>Tinjauan Umum
+                        Perusahaan</h1>
                 </div>
             </div>
         </div>
@@ -44,7 +47,8 @@
                             <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4"
                                 aria-label="Slide 5" class="bg-white"></button>
                         </div>
-                        <div class="carousel-inner bagian-bab-2">
+                        <div class="carousel-inner bagian-bab-2" data-aos="zoom-out-up" data-aos-duration="2000"
+                            data-aos-delay="200">
                             <div class="carousel-item  active">
                                 <div class="sejarah display-3">
                                     <!-- Sejarah PT Bamboomedia Cipta Persada -->
@@ -169,7 +173,7 @@
                                         <p class="inside-list">Merupakan sebuah CD <i>(Compact Disk)</i>
                                             pembelajaran
                                             atau toturial interkatif yang akan mempermudah Guru mengajar, mempercepat
-                                            Siswa belajar dalam Pemograman Web menggunakan Joomla.</p>
+                                            Siswa belajar dalam Pemrograman Web menggunakan Joomla.</p>
                                     </div>
                                     <!-- Program Simpan Pinjam -->
                                     <div class="program-sp col-md-10">
@@ -222,6 +226,14 @@
     </section>
     <!-- akhir isi bab -->
 
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
     <!-- Bootstrap JS -->
     <script src="../asset/js/bootstrap.min.js"></script>
 </body>
